@@ -1,16 +1,39 @@
-# React + Vite
+# Rick & Morty — Multiverse Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada con React y Vite para explorar personajes de Rick y Morty mediante la API pública de Rick and Morty.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Buscador de personajes por nombre.
+- Paginación conectada a los resultados de la API.
+- Tarjetas con imagen, estado, especie, género, origen y última ubicación.
+- Diseño adaptable a escritorio, tabletas y móviles.
+- Estados visuales de carga, errores y búsquedas sin resultados.
 
-## React Compiler
+## Requisitos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Node.js 20.19+ o 22.12+.
+- npm.
+- Conexión a internet para consultar la API y cargar las fuentes web.
 
-## Expanding the ESLint configuration
+## Instalación y ejecución
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+Para generar la versión de producción:
+
+```bash
+npm run build
+npm run preview
+```
+
+## API
+
+La aplicación utiliza la API pública:
+
+`https://rickandmortyapi.com/api/character`
+
+La búsqueda se realiza con el parámetro `name` y la navegación entre resultados con `page`.
